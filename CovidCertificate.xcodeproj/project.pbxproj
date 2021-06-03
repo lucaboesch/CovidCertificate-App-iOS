@@ -2211,7 +2211,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:admin-ch/CovidCertificate-SDK-iOS.git";
 			requirement = {
-				branch = main;
+				branch = "feature/add-li-keys";
 				kind = branch;
 			};
 		};

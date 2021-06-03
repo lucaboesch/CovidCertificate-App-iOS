@@ -14,8 +14,8 @@
         "package": "CovidCertificateSDK",
         "repositoryURL": "git@github.com:admin-ch/CovidCertificate-SDK-iOS.git",
         "state": {
-          "branch": "main",
-          "revision": "b259e3a85884501245325db9b47bc8173d0d9b15",
+          "branch": "feature/add-li-keys",
+          "revision": "99923e89bce20cf4dca0a38f5660dcbc1fdcb72a",
           "version": null
         }
       },

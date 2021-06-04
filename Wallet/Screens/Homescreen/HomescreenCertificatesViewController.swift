@@ -107,12 +107,14 @@ class HomescreenCertificatesViewController: ViewController {
         certificateViewVerifiers = []
 
         for i in certificateViews {
-            let v = Verifier(qrString: i.certificate.qrCode)
-            v.start { [weak i] state in
-                i?.state = state
-            }
+            if let qrCode = i.certificate.qrCode {
+                let v = Verifier(qrString: qrCode)
+                v.start { [weak i] state in
+                    i?.state = state
+                }
 
-            certificateViewVerifiers.append(v)
+                certificateViewVerifiers.append(v)
+            }
         }
     }
 }

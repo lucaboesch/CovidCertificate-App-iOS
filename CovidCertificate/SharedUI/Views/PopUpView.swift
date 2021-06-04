@@ -56,9 +56,12 @@ class PopupView: UIView {
             self.contentView.transform = .identity
             self.contentView.alpha = 1.0
         }, completion: { _ in })
+
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismiss))
+        backgroundView.addGestureRecognizer(tapGestureRecognizer)
     }
 
-    public func dismiss() {
+    @objc public func dismiss() {
         if viewPoint == .zero {
             return
         }
